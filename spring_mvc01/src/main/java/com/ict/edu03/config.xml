@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- id는 어떻게 부를지 객체의 이름 설정, class : 내가 객체로 만드려는 것의 이름 -->
+	<bean id="process" class="com.ict.edu03.MyProcess">
+		<!-- name : 생성자의 변수 이름, ctrl+space / value 거기에 값 주입 -->
+		<constructor-arg name="name" value="고길동"/>
+		<constructor-arg name="age" value="37"/>
+	</bean>
+	
+	<!-- 스프링은 싱글턴 ?.. -->
+	<bean id="process2" class="com.ict.edu03.MyProcess">
+		<property name="name" value="태권브이"/>
+		<property name="age" value="1984"/>
+	</bean>
+</beans>

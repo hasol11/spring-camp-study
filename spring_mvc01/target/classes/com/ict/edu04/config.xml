@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- 어노테이션 
+	어노테이션(Annotatio)이란
+	어노테이션은 사전적 의미로 주석을 뜻합니다.
+	자바에서 사용될 때의 어노테이션은 코드 사이에서 주석처럼 쓰여 특별한 의미, 기능을 수행하는 기술입니다.
+	즉, 어노테이션이란 자바 소스 코드에 추가하여 사용할 수 있는 메타데이터의 일종입니다.
+	메타데이터(meta data)
+	데이터에 관한 구조화된 데이터로, 다른 데이터를 설명해주는 데이터
+
+	어노테이션은 아래와 같은 용도로 사용됩니다.
+ 	- 컴파일러에게 코드 문법 에러를 체크하도록 정보를 제공합니다.
+ 	- 소프트웨어 개발툴이 빌드나 배치시 코드를 자동으로 생성할 수 있도록 정보를 제공합니다.
+ 	- 실행 시(run time) 특정 기능을 실행하도록 정보를 제공합니다.
+
+	Java에서 기본적으로 제공하는 어노테이션들을 사용해도 되고, 개발자가 직접 정의해서 사용해도 됩니다.
+	-->
+	
+	<!-- 어노테이션 사용 방법 -->
+	<!-- 1. Namespaces에 가서 context 추가 -->
+	<!-- 2. <context:annotation-config /> 추가-->
+	<!-- 3. <context:component-scan base-package="어노테이션할 패키지"/>  -->
+	<!-- 4. 해당 클래스에서 어노테이션하면 된다. -->
+	<!-- 객체를 만들 때 사용하는 어노테이션
+		@Components : 가장 상위 클래스
+		
+		@Service : 비즈니스 레이어를 처리하는 클래스에 사용
+				   (MVC에서 Service에 해당하는 클래스에 붙여준다.)
+				   
+	   @Repository : DAO 처리하는 클래스 사용 
+	   			   (MVC에서 Repository(Mapper) 해당하는 클래스에 붙여준다.)
+	   
+	   @Controller : Controller에 해당하는 클래스에 사용
+	   			   (MVC에서 Controller에 해당하는 클래스에 붙여준다.)
+	   			   
+	   **객체생성할 때 ID를 부여하지 않으면 해당 클래스의 이름을 사용(단, 첫글자는 소문자가 된다)		
+		
+	 -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.ict.edu04"/>
+	
+	<!-- <bean id="mysql" class="com.ict.edu04.MySQLDAO"/>
+	<bean id="oracle" class="com.ict.edu04.OracleDAO"/>
+	
+	<bean id="service2" class="com.ict.edu04.Service">
+		<constructor-arg ref="oracle"/>
+	</bean>
+	
+	<bean id="service" class="com.ict.edu04.Service">
+		<property name="dao" ref="mysql"></property>
+	</bean> -->
+</beans>
