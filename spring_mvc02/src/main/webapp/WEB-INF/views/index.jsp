@@ -33,5 +33,6 @@
 		<input type="submit" value="서버에 보내기">
 	
 	</form>
+	<h3><a href="/day02">day02</a></h3>
 </body>
 </html>
