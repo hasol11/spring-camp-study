@@ -161,4 +161,21 @@ public class Day2Controller {
 		mv.setViewName("redirect:/bookList"); //@RequestMapping("/bookList") 여기 부분으로 이동한다.
 		return mv;
 	}
+	
+	@GetMapping("/bookupdate")
+	public ModelAndView getBookUpdate(BookVO bvo) {
+		ModelAndView mv= new ModelAndView();
+		BookVO bookvo=bookService.getBookDetail(bvo);
+		mv.addObject("bvo", bookvo);
+		mv.setViewName("day02/result06");
+		return mv;
+	}
+	
+	@PostMapping("/bookupdate_ok")
+	public ModelAndView getBookUpdate_ok(BookVO bvo) {
+		ModelAndView mv=new ModelAndView();
+		int result= bookService.getBookUpdate_ok(bvo);
+		mv.setViewName("redirect:/bookdetail?bookid="+bvo.getBookid());
+		return mv;
+	}
 }

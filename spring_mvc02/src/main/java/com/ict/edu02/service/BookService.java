@@ -24,4 +24,8 @@ public class BookService {
 	public int getBookDelete(BookVO bvo) {
 		return bookDAO.getBookDelete(bvo);
 	}
+	
+	public int getBookUpdate_ok(BookVO bvo) {
+		return bookDAO.getBookUpdate_ok(bvo);
+	}
 }

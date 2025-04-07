@@ -15,4 +15,10 @@
 	<delete id="bookdelete" parameterType="com.ict.edu02.vo.BookVO">
 		delete from book where bookid=#{bookid}
 	</delete>
+	
+	<update id="bookupdate" parameterType="com.ict.edu02.vo.BookVO">
+		update book 
+		set bookname=#{bookname}, publisher=#{publisher}, price=#{price}
+		where bookid=#{bookid} 
+	</update>
 </mapper>

@@ -29,6 +29,9 @@
 	<!-- 어노테이션 범위 -->
 	<context:component-scan base-package="com.ict" />
 
-
-
+	<!-- 파일업로드용 클래스 등록 -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="524288000"/> <!-- 1024 * 1024 * 500 =500MB -->
+		<beans:property name="defaultEncoding" value="UTF-8"/>
+	</beans:bean>
 </beans:beans>

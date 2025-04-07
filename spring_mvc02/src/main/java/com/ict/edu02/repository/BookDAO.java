@@ -28,4 +28,9 @@ public class BookDAO {
 	public int getBookDelete(BookVO bvo) {
 		return sqlSessionTemplate.delete("book.bookdelete", bvo);
 	}
+	
+	public int getBookUpdate_ok(BookVO bvo) {
+		return sqlSessionTemplate.update("book.bookupdate", bvo);
+	}
+	
 }

@@ -34,5 +34,6 @@
 	
 	</form>
 	<h3><a href="/day02">day02</a></h3>
+	<h3><a href="/day03">day03</a></h3>
 </body>
 </html>

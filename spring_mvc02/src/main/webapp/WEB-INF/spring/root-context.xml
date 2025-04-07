@@ -16,7 +16,7 @@
 	<!-- mybatis:config(mapper 위치 지정) -->
 	<bean id="factoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
-		<property name="mapperLocations" value="classpath*:com/ict/edu02/repository/book_mapper.xml"></property>
+		<property name="mapperLocations" value="classpath*:com/ict/*/repository/*_mapper.xml"></property>
 	</bean>
 	
 	<!-- MayBatis에서 사용할 클래스 생성 -->
