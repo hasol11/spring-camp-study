@@ -1,0 +1,11 @@
+CREATE TABLE guestbook(
+	gb_idx INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	gb_name VARCHAR(255)  ,
+	gb_subject VARCHAR(255)  ,
+	gb_content VARCHAR(255)  ,
+	gb_email VARCHAR(255)  ,
+	gb_f_name VARCHAR(255)  ,
+	gb_regdate TIMESTAMP,
+	gb_pw VARCHAR(255)  ,
+	gb_old_f_name VARCHAR(255) 
+);

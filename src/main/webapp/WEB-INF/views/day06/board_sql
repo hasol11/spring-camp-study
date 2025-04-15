@@ -1,0 +1,14 @@
+CREATE TABLE board(
+	 b_idx INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	 writer VARCHAR(60) NOT NULL,
+	 title VARCHAR(60) NOT NULL,
+	 content LONGTEXT NOT NULL,
+	 pwd  CHAR(255) NOT NULL,
+	 hit INT NOT NULL,
+	 b_groups INT NOT NULL,
+	 b_step INT NOT NULL,
+	 b_lev INT NOT NULL,
+	 f_name VARCHAR(255),
+	 regdate timestamp default current_timestamp,
+	 active int not null default 0
+);
