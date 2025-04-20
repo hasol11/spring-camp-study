@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>nuri</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/67e1f0bf0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .search-box {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        justify-content: space-between;
+      }
+
+      .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0px;
+        font-size: 16px;
+        line-height: 20px;
+        width: 200px;
+      }
+      input::placeholder {
+        color: lightgray;
+      }
+
+      .search-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        font-size: 16px;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .container {
+        margin: 100px 20px;
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .top p {
+        margin-bottom: 0;
+        color: gray;
+      }
+      .top p span {
+        color: black;
+      }
+
+      .write-btn {
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        border: none;
+        float: right;
+        margin: 20px;
+        padding: 8px 16px;
+      }
+
+      hr {
+        height: 2px;
+        background-color: lightgray;
+        border: none;
+        margin: 20px 0 0 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>공지사항</h2>
+      <div class="top">
+        <p>전체 <span>5</span>건</p>
+        <form class="search-box">
+          <input type="text" class="search-txt" placeholder="Search" />
+          <button type="submit" class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <hr />
+
+      <table>
+        <colgroup>
+          <col style="width: 10%" />
+          <col style="width: 60%" />
+          <col style="width: 15%" />
+          <col style="width: 15%" />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>등록일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>대기업 취업 전략 특강(4/19) 참여 안내</td>
+            <td>관리자</td>
+            <td>2024.04.19</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>통합정보시스템 서버 점검 안내</td>
+            <td>관리자</td>
+            <td>2024.04.18</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2024년 1학기 수강신청 정정 기간 안내</td>
+            <td>관리자</td>
+            <td>2024.04.10</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2024년 1학기 수강신청 정정 기간 안내</td>
+            <td>관리자</td>
+            <td>2024.04.10</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2024년 1학기 수강신청 정정 기간 안내</td>
+            <td>관리자</td>
+            <td>2024.04.10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="write-btn">글쓰기</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nuri</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/67e1f0bf0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        margin: 100px 20px;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      .meta {
+        color: gray;
+        font-size: 14px;
+        margin: 4px 0;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        font-family: inherit;
+        line-height: 1.6;
+        margin-top: 20px;
+      }
+
+      .article-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+      }
+
+      .article-wrapper i {
+        color: black;
+        font-size: 16px;
+      }
+
+      .article {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      hr {
+        height: 1px;
+        background-color: lightgray;
+        border: none;
+        margin: 10px 0;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn {
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        padding: 8px 16px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>통합정보시스템 서버 점검 안내</h2>
+      <p class="meta">관리자</p>
+      <p class="meta">2025.04.20</p>
+
+      <pre>
+학사수업 관련 주요 서비스 이용과 관련하여,
+다음과 같이 통합정보시스템 서버 점검이 예정되어 있으니 참고 바랍니다.
+
+점검 일시 : 2025년 4월 15일(화) 22:00 ~ 16일(수) 02:00
+
+점검 내용 : 서버 안정화 및 보안 패치
+
+영향 범위 : 통합정보시스템, 모바일 앱 일부 기능
+작업 시간 중에는 서비스 이용이 일시 중단되오니,
+필요한 업무는 사전에 완료해 주시기 바랍니다.
+      </pre>
+
+      <hr />
+
+      <div class="article-wrapper">
+        <i class="fa-solid fa-arrow-up"></i>
+        <p class="article">2025-1학기 성적우수장학금 신청 안내</p>
+      </div>
+
+      <hr />
+
+      <div class="article-wrapper">
+        <i class="fa-solid fa-arrow-down"></i>
+        <p class="article">
+          25학년도 1학기 스터디룸 공공 예약제 (25.04.01~25.06.21)
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="buttons">
+        <button class="btn">목록</button>
+        <button class="btn">글쓰기</button>
+      </div>
+    </div>
+  </body>
+</html>
