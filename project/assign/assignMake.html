@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .total-container {
+        margin: 20px;
+        max-width: 900px;
+      }
+      .title-container {
+        position: relative;
+      }
+      .highlight {
+        position: relative;
+        top: 45px;
+        width: 200px;
+        height: 13px;
+        z-index: 0;
+        background-color: cornflowerblue;
+      }
+      .title-container h1 {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+      }
+      .btn-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        margin-bottom: 20px;
+      }
+      .btn-group button {
+        width: 80px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+      }
+      .btn-cancel {
+        background-color: #f44336;
+      }
+      .btn-submit {
+        background-color: #3f51b5;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: white;
+      }
+      th {
+        background-color: #e2e2f8;
+        width: 30%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+        text-align: left;
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="datetime-local"],
+      input[type="file"],
+      textarea {
+        width: 95%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      textarea {
+        resize: vertical;
+        height: 100px;
+      }
+      label {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total-container">
+      <div class="title-container">
+        <div class="highlight"></div>
+        <h1>과제 출제</h1>
+      </div>
+      <div class="btn-group">
+        <button class="btn-cancel">취소</button>
+        <button class="btn-submit">등록</button>
+      </div>
+      <table>
+        <tr>
+          <th>강의명</th>
+          <td>자바 기초</td>
+        </tr>
+        <tr>
+          <th>교수명</th>
+          <td>이정은</td>
+        </tr>
+        <tr>
+          <th>과제 제목</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>제출 시작일</th>
+          <td><input type="datetime-local" /></td>
+        </tr>
+        <tr>
+          <th>제출 마감일</th>
+          <td><input type="datetime-local" /></td>
+        </tr>
+        <tr>
+          <th>첨부파일</th>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <th>과제 설명 및 내용</th>
+          <td>
+            <textarea placeholder="과제에 대한 설명을 입력하세요."></textarea>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

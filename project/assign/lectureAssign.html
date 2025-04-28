@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .total-container {
+        margin: 20px;
+        max-width: 900px;
+      }
+      .title-container {
+        position: relative;
+      }
+      .highlight {
+        position: relative;
+        top: 45px;
+        width: 200px;
+        height: 13px;
+        z-index: 0;
+        background-color: cornflowerblue;
+      }
+      .title-container h1 {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+      }
+      .nav-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-left,
+      .nav-right {
+        display: flex;
+      }
+
+      .nav-left div,
+      .nav-right div {
+        width: 110px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 8px 8px 0 0;
+        margin-right: 2px;
+      }
+      .list {
+        background-color: #fdecb2;
+      }
+
+      .attend {
+        background-color: #e7f2d8;
+      }
+      .assign {
+        background-color: #b9e5fc;
+      }
+      .detail {
+        background-color: #d9c5ec;
+      }
+
+      .nav-container div a {
+        text-decoration: none;
+        color: gray;
+      }
+      .nav-container .assign a {
+        color: black;
+        font-weight: bold;
+      }
+      .main-container {
+        background-color: #f2f2f2;
+        padding: 10px 20px 20px 20px;
+      }
+
+      .main-top {
+        display: flex;
+        justify-content: space-between;
+      }
+      #assign-btn {
+        background-color: #3f3fa6;
+        color: white;
+        width: 80px;
+        height: 38px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+      }
+      .count {
+        margin: 0;
+      }
+      .count span {
+        color: orange;
+      }
+
+      .assign-list {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+      }
+
+      .assign-list div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .assign-list div p {
+        margin: 2px;
+      }
+      .submit {
+        color: blue;
+      }
+      .not-submit {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total-container">
+      <div class="title-container">
+        <div class="highlight"></div>
+        <h1>자바 기초</h1>
+      </div>
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="list"><a href="#">학생 목록</a></div>
+          <div class="attend"><a href="#">출결 관리</a></div>
+          <div class="assign"><a href="#">과제 현황</a></div>
+        </div>
+        <div class="nav-right">
+          <div class="detail"><a href="#">강의 정보</a></div>
+        </div>
+      </div>
+      <div class="main-container">
+        <p class="count">전체 과제 : <span>4</span></p>
+        <div class="main-top">
+          <p>제출 기간</p>
+          <div></div>
+          <button id="assign-btn">출제</button>
+        </div>
+        <div class="assign-list-wrapper">
+          <div class="assign-list">
+            <h2>1. 변수와 자료형 실습</h2>
+            <div class="time">
+              <p>제출 시작</p>
+              <p>2025.05.01 09:00</p>
+            </div>
+            <div class="time">
+              <p>제출 종료</p>
+              <p>2025.05.01 09:00</p>
+            </div>
+            <div class="count">
+              <p>제출</p>
+              <p class="submit">25</p>
+            </div>
+            <div class="count">
+              <p>미제출</p>
+              <p class="not-submit">5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

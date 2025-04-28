@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .total-container {
+        margin: 20px;
+        max-width: 900px;
+      }
+      .title-container {
+        position: relative;
+      }
+      .highlight {
+        position: relative;
+        top: 45px;
+        width: 200px;
+        height: 13px;
+        z-index: 0;
+        background-color: cornflowerblue;
+      }
+      .title-container h1 {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+      }
+      .nav-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; /* 왼쪽 그룹 + 오른쪽 그룹 */
+        align-items: center;
+      }
+
+      .nav-left,
+      .nav-right {
+        display: flex;
+      }
+
+      .nav-left div,
+      .nav-right div {
+        width: 110px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 8px 8px 0 0;
+        margin-right: 2px;
+      }
+      .list {
+        background-color: #fdecb2;
+      }
+
+      .attend {
+        background-color: #e7f2d8;
+      }
+      .assign {
+        background-color: #b9e5fc;
+      }
+      .detail {
+        background-color: #d9c5ec;
+      }
+
+      .nav-container div a {
+        text-decoration: none;
+        color: gray;
+      }
+      .nav-container .detail a {
+        color: black;
+        font-weight: bold;
+      }
+      .main-container {
+        background-color: #f2f2f2;
+        padding: 30px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: white;
+      }
+      th {
+        background-color: #e2e2f8;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+        text-align: left;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total-container">
+      <div class="title-container">
+        <div class="highlight"></div>
+        <h1>자바 기초</h1>
+      </div>
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="list"><a href="#">학생 목록</a></div>
+          <div class="attend"><a href="#">출결 관리</a></div>
+          <div class="assign"><a href="#">과제 현황</a></div>
+        </div>
+        <div class="nav-right">
+          <div class="detail"><a href="#">강의 정보</a></div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <table>
+          <tr>
+            <th>강의명</th>
+            <td>자바 기초</td>
+          </tr>
+          <tr>
+            <th>강의코드</th>
+            <td>SB20250121</td>
+          </tr>
+          <tr>
+            <th>담당 교수</th>
+            <td>안지훈</td>
+          </tr>
+          <tr>
+            <th>이수 학점</th>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>강의 요일</th>
+            <td>월, 수</td>
+          </tr>
+          <tr>
+            <th>강의 시간</th>
+            <td>9:00-10:30</td>
+          </tr>
+          <tr>
+            <th>강의실</th>
+            <td>미래관 302호</td>
+          </tr>
+          <tr>
+            <th>강의 기간</th>
+            <td>2025.03.02 - 2025.06.21</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

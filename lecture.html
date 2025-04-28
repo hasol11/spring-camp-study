@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강의 정보</title>
+    <style>
+      /* 전체 기본 세팅 */
+      body {
+        background-color: #fafafa;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* 제목 부분 */
+      .title-container {
+        position: relative;
+        width: 720px;
+      }
+
+      .highlight {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 150px;
+        height: 12px;
+        background-color: #9fe870;
+        z-index: 0;
+        border-radius: 5px;
+      }
+
+      .title-container h1 {
+        position: relative;
+        font-size: 30px;
+        margin: 0;
+        z-index: 1;
+      }
+
+      /* 메뉴바 전체 */
+      .nav-container {
+        margin-top: 20px;
+        width: 720px;
+        display: flex;
+        gap: 5px;
+      }
+
+      /* 각 탭 기본 스타일 */
+      .tab {
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bold;
+        border-radius: 10px 10px 0 0;
+      }
+
+      /* 각 탭 별 색상 설정 */
+      .tab.list {
+        background-color: #fdecb2; /* 연노랑 */
+      }
+
+      .tab.attend {
+        background-color: #e7f2d8; /* 연연두 */
+      }
+
+      .tab.assign {
+        background-color: #b9e5fc; /* 하늘 */
+      }
+
+      .tab.detail {
+        background-color: #d9c5ec; /* 연보라 */
+      }
+
+      /* 탭 안에 링크 스타일 */
+      .tab a {
+        text-decoration: none;
+        color: gray;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* 활성화된 탭 (강의 정보) */
+      .tab.detail a {
+        color: black;
+      }
+
+      /* 강의정보 테이블 영역 */
+      .mainContainer {
+        width: 720px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        padding: 30px;
+        margin-top: -5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid lightgray;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        width: 180px;
+        background-color: #eaf2ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 제목과 하이라이트 -->
+    <div class="title-container">
+      <div class="highlight"></div>
+      <h1>자바 기초</h1>
+    </div>
+
+    <!-- 메뉴바 -->
+    <div class="nav-container">
+      <div class="tab list"><a href="#">학생 목록</a></div>
+      <div class="tab attend"><a href="#">출결 관리</a></div>
+      <div class="tab assign"><a href="#">과제 현황</a></div>
+      <div class="tab detail"><a href="#">강의 정보</a></div>
+    </div>
+
+    <!-- 강의정보 표 -->
+    <div class="mainContainer">
+      <table>
+        <tr>
+          <th>강의명</th>
+          <td>자바 기초</td>
+        </tr>
+        <tr>
+          <th>강의코드</th>
+          <td>SB20250121</td>
+        </tr>
+        <tr>
+          <th>담당 교수</th>
+          <td>안지훈</td>
+        </tr>
+        <tr>
+          <th>이수 학점</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>강의 요일</th>
+          <td>월, 수</td>
+        </tr>
+        <tr>
+          <th>강의 시간</th>
+          <td>9:00-10:30</td>
+        </tr>
+        <tr>
+          <th>강의실</th>
+          <td>미래관 302호</td>
+        </tr>
+        <tr>
+          <th>강의 기간</th>
+          <td>2025.03.02 - 2025.06.21</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
