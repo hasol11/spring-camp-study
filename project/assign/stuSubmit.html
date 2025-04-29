@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과제 상세보기</title>
+    <style>
+      .total-container {
+        margin: 20px;
+        max-width: 900px;
+      }
+      .title-container {
+        position: relative;
+      }
+      .highlight {
+        position: relative;
+        top: 45px;
+        width: 200px;
+        height: 13px;
+        z-index: 0;
+        background-color: cornflowerblue;
+      }
+      .title-container h1 {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+      }
+      hr {
+        height: 2.5px;
+        background-color: lightgray;
+        border: none;
+      }
+      button {
+        width: 110px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+      }
+      .info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+      }
+      .info p {
+        margin: 0;
+        font-weight: bold;
+      }
+      .assign-detail {
+        margin: 30px 0;
+        font-size: 17px;
+      }
+      .submit-lists {
+        background-color: #f2f2f2;
+        padding: 10px 20px 20px 20px;
+      }
+      .count {
+        display: flex;
+        gap: 10px;
+      }
+
+      .submit-file {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .submit-list {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .submit-list p {
+        margin: 2px;
+      }
+      .btn-list {
+        margin-top: 10px;
+        background-color: gray;
+        position: relative;
+        left: 820px;
+      }
+      .blue {
+        color: blue;
+      }
+      .accent {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total-container">
+      <div class="title-container">
+        <div class="highlight"></div>
+        <h1>배열 다루기</h1>
+      </div>
+      <hr />
+      <div class="info">
+        <p>강의명 : 자바 기초</p>
+        <p>학생명 : 김학생</p>
+        <p>
+          제출 기간 :
+          <span class="accent">2025.05.12 09:00 - 2025.05.18 23:59</span>
+        </p>
+      </div>
+      <hr />
+      <pre class="assign-detail">
+  점수 배열을 생성하고, 배열에 저장된 값들의 합계와 평균을 계산하는 프로그램을 작성하세요.
+  배열 선언, 초기화, 순회 방법을 익히는 것이 목표입니다.
+        </pre
+      >
+      <hr />
+      <div class="submit-file">
+        <p>파일</p>
+        <button class="blue">파일 다운로드</button>
+      </div>
+      <hr />
+      <div class="submit-text">
+        <pre>제출된 텍스트가 없습니다</pre>
+      </div>
+      <button class="btn-list">제출 학생 목록</button>
+    </div>
+  </body>
+</html>

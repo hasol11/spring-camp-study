@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>교수 상세보기</title>
+    <style>
+      .total-container {
+        margin: 20px;
+        max-width: 900px;
+      }
+
+      .title-container {
+        position: relative;
+      }
+
+      .highlight {
+        position: relative;
+        top: 45px;
+        width: 200px;
+        height: 13px;
+        z-index: 0;
+        background-color: cornflowerblue;
+      }
+
+      .title-container h1 {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
+      .main-container {
+        background-color: #f2f2f2;
+        padding: 30px;
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        margin-bottom: 20px;
+      }
+
+      .btn-group button {
+        width: 80px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .btn-cancel {
+        background-color: #f44336;
+      }
+
+      .btn-submit {
+        background-color: #3f51b5;
+      }
+
+      .btn-dark {
+        background-color: #666;
+      }
+
+      .btn-green {
+        background-color: #2ecc71;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: white;
+      }
+
+      th {
+        background-color: #e2e2f8;
+        width: 30%;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .bottom-btn-group {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .bottom-btn-group button {
+        width: 100px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total-container">
+      <div class="title-container">
+        <div class="highlight"></div>
+        <h1>교수 상세보기</h1>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn-cancel">삭제</button>
+        <button class="btn-submit">수정</button>
+      </div>
+
+      <div class="main-container">
+        <table>
+          <tr>
+            <th>이름</th>
+            <td>김현우</td>
+          </tr>
+          <tr>
+            <th>생년월일</th>
+            <td>1990.01.01</td>
+          </tr>
+          <tr>
+            <th>사번</th>
+            <td>P20250121</td>
+          </tr>
+          <tr>
+            <th>학적 상태</th>
+            <td>재직</td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>hyunwoo@naver.com</td>
+          </tr>
+          <tr>
+            <th>휴대폰 번호</th>
+            <td>010-1234-5678</td>
+          </tr>
+          <tr>
+            <th>학년</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>전공</th>
+            <td>소프트웨어학과</td>
+          </tr>
+          <tr>
+            <th>학과장 여부</th>
+            <td>O</td>
+          </tr>
+        </table>
+
+        <div class="bottom-btn-group">
+          <button class="btn-dark">목록</button>
+          <button class="btn-green">수업 조회</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

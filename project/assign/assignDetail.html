@@ -4,72 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<style>
-      .total-container {
-        margin: 20px;
-        max-width: 900px;
-      }
-      .title-container {
-        position: relative;
-      }
-      .highlight {
-        position: relative;
-        top: 45px;
-        width: 200px;
-        height: 13px;
-        z-index: 0;
-        background-color: cornflowerblue;
-      }
-      .title-container h1 {
-        position: relative;
-        z-index: 1;
-        margin: 0;
-      }
-      .btn-group {
-        display: flex;
-        justify-content: flex-end;
-        gap: 5px;
-        margin-bottom: 20px;
-      }
-      hr {
-        height: 2.5px;
-        background-color: lightgray;
-        border: none;
-      }
-      button {
-        width: 80px;
-        height: 38px;
-        border: none;
-        border-radius: 5px;
-        font-size: 15px;
-        color: white;
-        cursor: pointer;
-      }
-      .btn-delete {
-        background-color: #f44336;
-      }
-      .btn-update {
-        background-color: #3f51b5;
-      }
-      .info{
-      	display: flex;
-      	justify-content: space-between;
-      }
-      .info p {
-      	margin :0;
-      	font-weight: bold;
-      }
-      pre{
-      	margin: 30px 0;
-      	font-size: 17px;
-      }
+    <style>
       .submit-lists {
         background-color: #f2f2f2;
         padding: 10px 20px 20px 20px;
-      }
-      .count{
-      	display: flex;
-      	gap:10px;
       }
 
       .submit-list {
@@ -86,18 +24,6 @@
       .submit-list p {
         margin: 2px;
       }
-      .btn-list{
-      	margin-top: 10px;
-      	background-color: gray;
-      	position: relative;
-      	left: 820px;
-      }
-      .blue{
-      	color: blue;
-      }
-      .accent{
-      	color: red;
-      }
     </style>
   </head>
   <body>
@@ -112,40 +38,41 @@
         <button class="btn-delete">삭제</button>
       </div>
       <hr />
-      <div class="info">
-        <p>강의명 :  자바 기초</p>
-        <p>교수명 :  안지훈</p>
+      <div>
+        <p>강의명 : 자바 기초</p>
+        <p>교수명 : 안지훈</p>
         <p>
-          제출 기간 :  <span class="accent">2025.05.12  09:00  -  2025.05.18  23:59</span>
+          제출 기간 : <span>2025.05.12 09:00</span> -
+          <span>2025.05.18 23:59</span>
         </p>
       </div>
       <hr />
       <pre>
 점수 배열을 생성하고, 배열에 저장된 값들의 합계와 평균을 계산하는 프로그램을 작성하세요.
-배열 선언, 초기화, 순회 방법을 익히는 것이 목표입니다.
+        배열 선언, 초기화, 순회 방법을 익히는 것이 목표입니다.
       </pre>
       <hr />
       <div class="submit-lists">
-        <div class="count">
-          <p>제출 학생 : <span class="blue">2</span></p>
-          <p>미제출 학생 : <span class="accent">26</span></p>
+        <div>
+          <p>제출 학생 : <span>2</span></p>
+          <p>미제출 학생 : <span>26</span></p>
         </div>
         <div class="submit-list">
           <h2>1. 김학생</h2>
           <div class="time">
             <p>제출일/시간</p>
-            <p class="accent">2025.05.01 09:00</p>
+            <p class="date">2025.05.01 09:00</p>
           </div>
         </div>
         <div class="submit-list">
           <h2>1. 김학생</h2>
           <div class="time">
             <p>제출일/시간</p>
-            <p class="accent">2025.05.01 09:00</p>
+            <p class="date">2025.05.01 09:00</p>
           </div>
         </div>
       </div>
-      <button class="btn-list">목록</button>
+      <button>목록</button>
     </div>
   </body>
 </html>
