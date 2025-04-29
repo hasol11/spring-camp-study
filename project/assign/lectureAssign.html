@@ -1,9 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>과제 상세보기</title>
+    <script
+      src="https://kit.fontawesome.com/67e1f0bf0d.js"
+      crossorigin="anonymous"></script>
     <style>
       .total-container {
         margin: 20px;
@@ -86,6 +90,7 @@
         border-radius: 5px;
         border: none;
         font-size: 15px;
+        cursor: pointer;
       }
       .count {
         margin: 0;
@@ -117,6 +122,27 @@
       .not-submit {
         color: red;
       }
+      .search-box{
+      	display: flex;
+      	justify-content: flex-start;
+      	gap: 10px;
+      	align-items: center;
+      }
+      .search-btn{
+      margin: 10px 0;
+        padding: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    select{
+      padding: 8px;
+      margin-left: 5px;
+      height: 35px;
+      width: 180px;
+      }
     </style>
   </head>
   <body>
@@ -138,8 +164,17 @@
       <div class="main-container">
         <p class="count">전체 과제 : <span>4</span></p>
         <div class="main-top">
-          <p>제출 기간</p>
-          <div></div>
+       		<div class="search-box">
+         		 <p>제출 기간</p>
+         		 <select id="date" name="date">
+                          <option value="total">전체</option>
+                          <option value="submit-possible">제출 가능</option>
+                          <option value="date-end">기간 만료</option>
+                  </select>
+          		<button type="submit" class="search-btn">	
+            		<i class="fa-solid fa-magnifying-glass"></i>
+             	</button>
+          </div>
           <button id="assign-btn">출제</button>
         </div>
         <div class="assign-list-wrapper">
